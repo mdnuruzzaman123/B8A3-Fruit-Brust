@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Brust</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
 
     <!-- tailwind and daisy UI -->
 
@@ -14,27 +15,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
     <style>
         .lato{
-            font-family: 'Lato', sans-serif;
+          font-family: 'Lato', sans-serif;
         }
     </style>
-
-    <!-- tailwind styles -->
-
-    <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
-          }
-        }
-    </script>
 
 </head>
 <body class="lato">
@@ -46,8 +33,9 @@
         <!-- nav section -->
 
         <nav>
-          <div class="navbar flex-row-reverse md:flex-row lg:bg-[#F85559] xl:rounded-full lg:text-white xl:mt-10 xl:h-20 2xl:mt-12 2xl:h-28">
-            <div class="navbar-start">
+          <div class="navbar flex-row-reverse md:flex-row justify-between lg:bg-[#F85559] xl:rounded-full lg:text-white xl:mt-10 xl:h-20 2xl:mt-12 2xl:h-28">
+
+            <div class="navbar-start w-1/6">
                 <div class="dropdown dropdown-end md:hidden">
                 <label tabindex="0" class="btn btn-ghost btn-circle m-1"><svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg></label>
                 <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
@@ -57,6 +45,7 @@
                     <li><a href="">All Fruits</a></li>
                 </ul>
               </div>
+
               <div class="dropdown hidden md:block lg:hidden">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
@@ -67,38 +56,41 @@
                     <li><a href="">Shop</a></li>
                     <li><a href="">All Fruits</a></li>
                 </ul>
+
               </div>
-              <div class="hidden lg:block items-center">
-                <ul class="flex lg:pl-4 xl:pl-6 2xl:pl-8">
+              <div class="hidden lg:block">
+                <ul class="flex items-center no whitespace-nowrap">
                     <li>
-                        <a  class="btn btn-ghost text-xs" href="">Home</a>
+                      <a  class="btn btn-ghost text-xs" href="">Home</a>
                     </li>
                     <li>
-                        <a class="btn btn-ghost text-xs"  href="">About Us</a>
+                      <a class="btn btn-ghost text-xs"  href="">About  Us</a>
                     </li>
                     <li>
-                        <a class="btn btn-ghost text-xs"  href="">Shop</a>
+                      <a class="btn btn-ghost text-xs"  href="">Shop</a>
                     </li>
                     <li>
-                        <a class="btn btn-ghost text-xs"  href="">All Fruits</a>
+                      <a class="btn btn-ghost text-xs"  href="">All  Fruits</a>
                     </li>
                 </ul>
               </div>
+
             </div>
-            <div class="navbar-center ">
-                <img class="w-8 h-9 2xl:w-11 2xl:h-12" src="./images/logo.png" alt="">
-              <a class="btn btn-ghost normal-case text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">Fruit Burst</a>
-            </div>
-            <div class="navbar-end ">
-                <div class="form-control hidden md:block">
-                    <div class="input-group input-bordered border-2  rounded-full overflow-hidden bg-white h-12">
-                      <input type="text" placeholder="Search here" class="input text-black" />
-                      <button class="btn btn-ghost btn-circle">
-                        <svg class="text-black w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                      </button>
-                    </div>
+            <div class="navbar-center md:gap-16 lg:gap-28 2xl:gap-80">
+                <div class="flex justify-between items-center">
+                  <img class="w-8 h-9 2xl:w-11 2xl:h-12 ml-2 md:ml-0" src="./images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl">Fruit Burst</a>
+
+                </div>
+                <div class="form-control hidden md:block mr-6">
+                  <div class="input-group input-bordered border-2  rounded-full overflow-hidden bg-white h-12">
+                    <input type="text" placeholder="Search here" class="input text-black"/>
+
+                    <button class="btn btn-ghost btn-circle hover:bg-transparent">
+                      <svg class="text-black w-5" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </button>
                   </div>
-              </button>
+                </div>
             </div>
           </div>
         </nav>
@@ -107,14 +99,15 @@
 
         <section class="relative">
 
-            <!-- carousel -->
+          <!-- carousel -->
 
-            <div class=" carousel w-full mt-14 rounded-lg">
+          <div class=" carousel w-full mt-14 rounded-lg">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="./images/banner1.png" class="w-full" />
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide4" class="btn btn-circle">❮</a> 
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+
                     <!-- banner text section -->
 
                     <div class="text-center text-[#FFF]">
@@ -125,13 +118,16 @@
                         <button class="hidden md:block btn text-white border-none bg-[#F85559] hover:bg-[#F85559] mt-7 lg:mb-7">Shop Now</button>
 
                         <!-- mobile view button-->
+
                         <button class="btn btn-sm md:hidden bg-[#F85559] text-white border-none mt-3">Shop Now</button>
                       </div>
                     </div>
                     <a href="#slide2" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
+
                 <!-- slide 2 -->
+
                 <div id="slide2" class="carousel-item relative w-full">
                   <img src="./images/banner2.png" class="w-full" />
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -147,13 +143,16 @@
                         <button class="hidden md:block btn text-white border-none bg-[#F85559] hover:bg-[#F85559] mt-8 lg:mb-7">Shop Now</button>
 
                         <!-- mobile view button-->
+
                         <button class="btn btn-sm md:hidden bg-[#F85559] text-white border-none mt-3">Shop Now</button>
                       </div>
                     </div>
                     <a href="#slide3" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
+
                 <!-- slide 3 -->
+
                 <div id="slide3" class="carousel-item relative w-full">
                   <img src="./images/banner3.png" class="w-full" />
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -169,13 +168,16 @@
                         <button class="hidden md:block btn text-white border-none bg-[#F85559] hover:bg-[#F85559] mt-8 lg:mb-7">Shop Now</button>
 
                         <!-- mobile view button-->
+
                         <button class="btn btn-sm md:hidden bg-[#F85559] text-white border-none mt-3">Shop Now</button>
                       </div>
                     </div>
                     <a href="#slide4" class="btn btn-circle">❯</a>
                   </div>
                 </div> 
+
                 <!-- slide 4 -->
+
                 <div id="slide4" class="carousel-item relative w-full">
                   <img src="./images/banner4.png" class="w-full" />
                   <div class="absolute flex justify-between items-center transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -191,17 +193,19 @@
                         <button class="hidden md:block btn text-white border-none bg-[#F85559] hover:bg-[#F85559] mt-8 lg:mb-7">Shop Now</button>
 
                         <!-- mobile view button-->
+
                         <button class="btn btn-sm md:hidden bg-[#F85559] text-white border-none mt-3">Shop Now</button>
                       </div>
                     </div>
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
-              </div>
+          </div>
 
-            <!-- food list section -->
+          <!-- food list section -->
             
-            <div class=" hidden lg:block absolute lg:left-24 lg:-bottom-[70px] xl:left-16 xl:-bottom-20 2xl:left-28 2xl:-bottom-28">
+          <div class=" hidden lg:block absolute lg:left-24 lg:-bottom-[70px] xl:left-16 xl:-bottom-20 2xl:left-28 2xl:-bottom-28">
+
               <div class="lg:w-[850px] xl:w-[900px] 2xl:w-[1200px] lg:h-40 xl:h-44 2xl:h-60 mx-auto flex justify-center items-center rounded-lg shadow-xl lg:gap-5 xl:gap-8 2xl:gap-24 bg-white">
                 <img src="./images/fruit1.png" alt="">
                 <img src="./images/fruit2.png" alt="">
@@ -209,16 +213,20 @@
                 <img src="./images/fruit4.png" alt="">
                 <img src="./images/fruit5.png" alt="">
               </div>
-            </div>
+          </div>
         </section>
 
     </header>
+
+    <!-- main section -->
+
     <main class="xl:max-w-screen-lg 2xl:max-w-[1440px] mx-auto px-5 xl:px-0">
 
       <!-- deal section -->
 
         <section class="my-8 md:my-28 lg:my-36 2xl:mt-64">
           <div class="flex flex-col lg:flex-row justify-between items-center">
+
             <div class="text-center lg:text-left flex-auto mb-5 lg:mb-0">
               <h3 class="text-4xl md:text-5xl font-extrabold">Deal of the day</h3>
               <p class="mt-6 text-justify md:text-center lg:text-left md:px-24 lg:pl-0 lg:pr-14">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -342,7 +350,9 @@
                   <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div>
+
                   <!-- You can open the modal using ID.showModal() method -->
+
                   <button class="btn btn-sm btn-ghost text-[#F85559]" onclick="my_modal_2.showModal()">Details</button>
                   <dialog id="my_modal_2" class="modal">
                     <form method="dialog" class="modal-box">
@@ -369,6 +379,7 @@
                 </div>
               </div>
             </div>
+
             <!-- cars 3 -->
 
             <div class="card bg-base-100 border border-gray-200 shadow-lg">
@@ -390,7 +401,9 @@
                   <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div>
+
                   <!-- You can open the modal using ID.showModal() method -->
+                 
                   <button class="btn btn-sm btn-ghost text-[#F85559]" onclick="my_modal_3.showModal()">Details</button>
                   <dialog id="my_modal_3" class="modal">
                     <form method="dialog" class="modal-box">
@@ -417,6 +430,7 @@
                 </div>
               </div>
             </div>
+
             <!-- cars 4 -->
 
             <div class="card bg-base-100 border border-gray-200 shadow-lg">
@@ -427,7 +441,9 @@
                 <h2 class="card-title font-bold">12.90$ - 18.85$</h2>
                 <hr class="w-48 h-0 border border-slate-200">
                 <p>Banana</p>
+
                 <!-- rating -->
+
                 <div class="rating">
                   <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                   <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
@@ -436,7 +452,9 @@
                   <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
                 </div>
                 <div>
+
                   <!-- You can open the modal using ID.showModal() method -->
+                 
                   <button class="btn btn-sm btn-ghost text-[#F85559]" onclick="my_modal_4.showModal()">Details</button>
                   <dialog id="my_modal_4" class="modal">
                     <form method="dialog" class="modal-box">
@@ -484,12 +502,14 @@
                 <p class="mt-6">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 
               </div>
-              <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-28">
+              <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-28 xl:gap-20 2xl:gap-28">
+
                 <!-- card 1 -->
+
                 <div class="flex justify-center items-center">
                   <div>
                     <img src="./images/member1.png" alt="">
-                  <h4 class="text-lg font-bold mb-3 mt-3">Awlad Hossain</h4>
+                  <h4 class="text-lg xl:text-base 2xl:text-lg  font-bold mb-3 mt-3">Awlad Hossain</h4>
                   <p>Fruits Expert</p>
                   <div class="flex items-center justify-center gap-3 mt-4">
                     <img src="./images/facebook 1 (1).svg" alt="">
@@ -498,7 +518,9 @@
                   </div>
                   </div>
                 </div>
+
                 <!-- card 2 -->
+
                 <div class="flex justify-center items-center">
                   <div>
                     <img src="./images/member2.png" alt="">
@@ -511,11 +533,13 @@
                   </div>
                   </div>
                 </div>
+
                 <!-- card 3 -->
+
                 <div class="flex justify-center items-center">
                   <div>
                     <img src="./images/member3.png" alt="">
-                  <h4 class="text-lg font-bold mb-3 mt-3">Rokib Hossain</h4>
+                  <h4 class="text-lg xl:text-base 2xl:text-lg font-bold mb-3 mt-3">Rokib Hossain</h4>
                   <p>Fruits Expert</p>
                   <div class="flex items-center justify-center gap-3 mt-4">
                     <img src="./images/facebook 1 (1).svg" alt="">
@@ -524,11 +548,13 @@
                   </div>
                   </div>
                 </div>
+
                 <!-- card 4 -->
+
                 <div class="flex justify-center items-center">
                   <div>
                     <img src="./images/member4.png" alt="">
-                  <h4 class="text-lg font-bold mb-3 mt-3">Chaity</h4>
+                  <h4 class="text-lg xl:text-base 2xl:text-lg font-bold mb-3 xl:mb-5 2xl:mb-3 mt-3 xl:mt-5 2xl:mt-3">Chaity</h4>
                   <p>Fruits Expert</p>
                   <div class="flex items-center justify-center gap-3 mt-4">
                     <img src="./images/facebook 1 (1).svg" alt="">
@@ -546,6 +572,7 @@
         <!-- choose us section -->
 
         <section class="my-10 md:my-28 lg:my-36">
+
           <div class=" space-y-6">
             <h3 class="text-4xl md:text-5xl font-extrabold text-center">Why Choose Us</h3>
             <p class=" text-justify md:text-center md:px-24 lg:px-48">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
@@ -685,5 +712,6 @@
     </div>
 
     </footer>
+
 </body>
 </html>
